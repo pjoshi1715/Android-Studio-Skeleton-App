@@ -4,21 +4,19 @@
     android:padding ="10dp"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enable Dark Mode"
-        android:textColor="?attr/textcolor"
-        android:textSize="18sp"
-        android:textStyle="bold"/>
-
     <Switch
         android:id="@+id/myswitch"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="460dp"
         android:text="Night Mode"
-        android:textColor="?attr/textcolor" />
+         />
 
 
 </LinearLayout>
