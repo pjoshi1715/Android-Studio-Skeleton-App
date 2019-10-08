@@ -1,11 +1,14 @@
 package CSA.myapplication;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.TextView;
-
+import android.content.Intent;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.graphics.Color;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,7 +20,7 @@ import androidx.navigation.ui.NavigationUI;
 
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,8 +34,14 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
+        final Button settingbutton = (Button) findViewById(R.id.settingbutton);
+        settingbutton.setOnClickListener(this);
 
-            }
+    }
 
-
+    @Override
+    public void onClick(View v) {
+        Intent switchscreen = new Intent(MainActivity.this, Settings.class);
+        startActivity(switchscreen);
+    }
 }

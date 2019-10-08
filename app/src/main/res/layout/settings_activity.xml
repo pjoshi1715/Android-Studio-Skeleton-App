@@ -1,8 +1,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding ="10dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <Switch
         android:id="@+id/myswitch"
@@ -15,8 +16,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginStart="296dp"
         android:layout_marginTop="460dp"
-        android:text="Night Mode"
-         />
+        android:text="Night Mode" />
 
 
 </LinearLayout>
