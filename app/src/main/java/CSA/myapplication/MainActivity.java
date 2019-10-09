@@ -20,7 +20,7 @@ import androidx.navigation.ui.NavigationUI;
 
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,12 +35,13 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
         final Button settingbutton = (Button) findViewById(R.id.settingbutton);
-        settingbutton.setOnClickListener(new Button.OnClickListener() {
-            public void onClick (View v) {
-                Intent switchscreen = new Intent(MainActivity.this, Settings.class);
-                startActivity(switchscreen);
-            }
-        });
+        settingbutton.setOnClickListener(this);
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        Intent switchscreen = new Intent(MainActivity.this, Settings.class);
+        startActivity(switchscreen);
     }
 }
