@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -28,6 +29,13 @@ public class DashboardFragment extends Fragment {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
+            }
+        });
+        final Button compliment = root.findViewById(R.id.compliment);
+        final TextView compliment_text = root.findViewById(R.id.compliment_text);
+        compliment.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                compliment_text.setVisibility(View.VISIBLE);
             }
         });
         return root;
