@@ -18,7 +18,9 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-
+/**
+ * The MainaActivity class is a class which creates the main activity and all of the fragments within
+ */
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @Override

@@ -20,4 +20,6 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="settingbutton">Button</string>
+    <string name="an_app_to_make_you_happy">AN APP TO MAKE YOU HAPPY</string>
+    <string name="todo">TODO</string>
 </resources>

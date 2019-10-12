@@ -11,7 +11,14 @@ import androidx.preference.PreferenceFragmentCompat;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+/**
+ * Settings class is a class for the settings activity which sets the color, name, and email of the users preferance
+ */
 public class Settings extends AppCompatActivity {
+    /**
+     *
+     * @param savedInstanceState - is the parameter for th state of the switch which causes darkmode to work
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -23,10 +30,12 @@ public class Settings extends AppCompatActivity {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     if(isChecked) {
+                        //set color to black
                         container.setBackgroundColor(Color.parseColor("#303030"));
 
                     }
                     else {
+                        //set color to white
                         container.setBackgroundColor(Color.parseColor("#ffffff"));
 
                     }
