@@ -20,6 +20,12 @@ import androidx.lifecycle.ViewModelProviders;
 
 import CSA.myapplication.R;
 
+/**
+ * The DashboardViewModel class will create part of the fragment for the dashboard class
+ *
+ * @author Ethan
+ * @version 10/11/19
+ */
 public class DashboardViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;

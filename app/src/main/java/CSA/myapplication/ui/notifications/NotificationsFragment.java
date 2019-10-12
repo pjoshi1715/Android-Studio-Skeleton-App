@@ -18,10 +18,23 @@ import java.util.concurrent.TimeUnit;
 
 import CSA.myapplication.R;
 
+/**
+ * The NotificationsFragment class will create the fragment for the notification class
+ *
+ * @author Ethan
+ * @version 10/11/19
+ */
 public class NotificationsFragment extends Fragment {
 
     private NotificationsViewModel notificationsViewModel;
 
+    /**
+     * onCreateView - sets up environment
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         notificationsViewModel =

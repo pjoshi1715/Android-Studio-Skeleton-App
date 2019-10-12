@@ -18,13 +18,20 @@ import CSA.myapplication.R;
 /**
  * The DashboardFragment class will create the fragment for the dashboard class
  *
- * @author Parth
+ * @author Ethan
  * @version 10/11/19
  */
 public class DashboardFragment extends Fragment {
 
     private DashboardViewModel dashboardViewModel;
 
+    /**
+     * onCreateView - sets up environment
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         dashboardViewModel =

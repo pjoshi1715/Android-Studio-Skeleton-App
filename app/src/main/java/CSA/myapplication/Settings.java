@@ -13,10 +13,13 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 /**
  * Settings class is a class for the settings activity which sets the color, name, and email of the users preferance
+ *
+ * @author Jonathan
+ * @version 10/11/19
  */
 public class Settings extends AppCompatActivity {
     /**
-     *
+     * onCreate - sets up Switch
      * @param savedInstanceState - is the parameter for th state of the switch which causes darkmode to work
      */
     @Override
@@ -28,6 +31,11 @@ public class Settings extends AppCompatActivity {
             BottomNavigationView navView = findViewById(R.id.nav_view);
             myswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
+                /**
+                 * onCheckChanged - checks a change of state in button
+                 * @param buttonView
+                 * @param isChecked
+                 */
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     if(isChecked) {
                         //set color to black

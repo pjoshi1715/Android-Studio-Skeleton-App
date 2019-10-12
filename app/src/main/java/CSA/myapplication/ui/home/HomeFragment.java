@@ -14,10 +14,23 @@ import androidx.lifecycle.ViewModelProviders;
 
 import CSA.myapplication.R;
 
+/**
+ * The HomeFragment class will create the fragment for the home class
+ *
+ * @author Parth
+ * @version 10/11/19
+ */
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
 
+    /**
+     * onCreateView - sets up environment
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return
+     */
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =

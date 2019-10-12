@@ -7,7 +7,12 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-
+/**
+ * The NotificationsViewModel class will create the fragment for the notification class
+ *
+ * @author Ethan
+ * @version 10/11/19
+ */
 public class NotificationsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;

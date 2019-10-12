@@ -19,11 +19,17 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 /**
- * The MainaActivity class is a class which creates the main activity and all of the fragments within
+ * The MainActivity class is a class which creates the main activity and all of the fragments within
+ *
+ * @author Jonathan
+ * @version 10/11/19
  */
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     @Override
+    /**
+     * onCreate - creates button
+     */
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -42,6 +48,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    /**
+     * onClick - checks if clicked
+     * @param v
+     */
     public void onClick(View v) {
         Intent switchscreen = new Intent(MainActivity.this, Settings.class);
         startActivity(switchscreen);
